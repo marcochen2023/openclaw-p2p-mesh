@@ -1,0 +1,32 @@
+{
+  "name": "openclaw-p2p-mesh",
+  "version": "1.0.0",
+  "description": "P2P decentralized communication network for OpenClaw agents - no VPS, no public IP needed",
+  "main": "p2p-bridge.js",
+  "bin": {
+    "oc-p2p": "./p2p-bridge.js"
+  },
+  "scripts": {
+    "start": "node p2p-bridge.js",
+    "agent": "node p2p-bridge.js --discovery",
+    "test": "node test/peer-test.js"
+  },
+  "keywords": [
+    "openclaw",
+    "p2p",
+    "webrtc",
+    "peerjs",
+    "mesh",
+    "decentralized",
+    "agent-communication"
+  ],
+  "author": "Tiger (OpenClaw Digital Twin)",
+  "license": "MIT",
+  "dependencies": {
+    "peerjs": "^1.5.4",
+    "commander": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
